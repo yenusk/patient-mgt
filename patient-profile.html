@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile | Patient Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <!-- Same sidebar as dashboard -->
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h2>Patient Profile</h2>
+                <div class="header-actions">
+                    <button class="btn secondary">Print</button>
+                    <button class="btn primary" id="edit-profile-btn">Edit Profile</button>
+                </div>
+            </header>
+
+            <div class="patient-profile">
+                <div class="profile-header">
+                    <div class="patient-avatar">YK</div>
+                    <div class="patient-info">
+                        <h3>Yenus Kindu</h3>
+                        <p>Patient ID: P-100245 | male | 20 years</p>
+                        <p>Blood Type: A+ | Allergies: Penicillin</p>
+                    </div>
+                    <div class="patient-status">
+                        <span class="status-badge in-treatment">In Treatment</span>
+                        <p>Last Visit: 2025-05-15</p>
+                    </div>
+                </div>
+
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="history">Medical History</button>
+                    <button class="tab-btn" data-tab="treatment">Current Treatment</button>
+                    <button class="tab-btn" data-tab="reports">Medical Reports</button>
+                </div>
+
+                <div class="tab-content active" id="overview-tab">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>Contact Information</h4>
+                            <p><strong>Phone:</strong> +25191234455</p>
+                            <p><strong>Email:</strong> yenusk@example.com</p>
+                            <p><strong>Address:</strong> Dire Dawa, Ethiopia</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Emergency Contact</h4>
+                            <p><strong>Name:</strong> Michael John</p>
+                            <p><strong>Relationship:</strong> Spouse</p>
+                            <p><strong>Phone:</strong> +2519543455</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Medical Summary</h4>
+                            <p><strong>Primary Condition:</strong> Hypertension</p>
+                            <p><strong>Chronic Conditions:</strong> None</p>
+                            <p><strong>Last BP Reading:</strong> 130/85 mmHg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="history-tab">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-05-10</div>
+                            <div class="timeline-content">
+                                <h5>Follow-up Consultation</h5>
+                                <p>Dr. Smith adjusted medication dosage for better blood pressure control.</p>
+                                <p><strong>Prescription:</strong> Lisinopril 10mg daily</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-05-12</div>
+                            <div class="timeline-content">
+                                <h5>Annual Checkup</h5>
+                                <p>Routine physical examination. Blood work showed slightly elevated cholesterol.</p>
+                                <p><strong>Recommendation:</strong> Dietary changes, follow-up in 3 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="treatment-tab">
+                    <div class="treatment-current">
+                        <h4>Current Medications</h4>
+                        <ul class="medication-list">
+                            <li>
+                                <strong>Lisinopril</strong> - 10mg daily
+                                <span class="medication-details">For hypertension, started 2023-11-15</span>
+                            </li>
+                        </ul>
+
+                        <h4>Treatment Plan</h4>
+                        <div class="treatment-plan">
+                            <p>Monitor blood pressure weekly. Follow-up appointment scheduled for 2025-05-15.</p>
+                            <p>Recommended low-sodium diet and regular exercise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="reports-tab">
+                    <div class="reports-grid">
+                        <div class="report-card">
+                            <h5>Blood Test (2025-05-10)</h5>
+                            <p>Cholesterol: 190 mg/dL</p>
+                            <p>Glucose: 92 mg/dL</p>
+                            <button class="btn small">View Full Report</button>
+                        </div>
+                        <div class="report-card">
+                            <h5>ECG (2025-04-22)</h5>
+                            <p>Normal sinus rhythm</p>
+                            <button class="btn small">View Full Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/patient.js"></script>
+</body>
+</html>
